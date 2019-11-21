@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tsc": "tsc -p tsconfig.json"
+    "tsc": "tsc -p tsconfig.json",
+    "build:server": "tsc server/server.ts -outDir ./build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^8.10.49",
     "nodemon": "^2.0.0",
     "ts-node": "^8.5.2",
     "tslint": "^5.20.1",
